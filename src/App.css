@@ -1,38 +1,222 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: 16.0002px;
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: MessinaSans,sans-serif;
+  color: RGBA(0,0,0,1);
+  color: RGBA(var(--primary-text),1);
+  background-color: RGBA(255,255,255,1);
+  background-color: RGBA(var(--primary-bg--alt),1);
+  -moz-font-feature-settings: "liga" on;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 78px;
+  padding-left: 30px;
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  border-bottom: 1px solid rgba(187, 181, 181, 0.5);
+  background-color: white;
+  z-index: 1;
+}
+
+.container-logo{
+  display: flex;
+  width: 193px;
+  height: 43px;
+  gap: 10px;
+  align-items: center;
+}
+
+.container-logo p {
+  font-size: 12px;
+  color: black;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.container-logo p:hover{
+  color: rgb(21, 9, 187);
+}
+
+.container-logo img {
+  height: 43px;
+}
+
+.container-navitem{
+  display: flex;
+  height: 100%;
+  gap: 20px;
+}
+
+.navitem{
+  height: 100%;
+  align-items: center;
+  line-height: 78px;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navitem:hover{
+  text-decoration: underline;
+  text-decoration-color: rgb(67, 32, 163);
+  text-underline-position: auto;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+}
+
+.container-search{
+  display: flex;
+  width: 78px;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-left: 1px solid rgba(187, 181, 181, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+.container-search:hover{
+  background-color: rgb(81, 40, 192);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 19px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.body {
+  width: 100%;
+  height: 1000px;
+  padding-top: 78px;
+}
+
+.form-search{
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.form-search label{
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+.search-box{
+  display: flex;
+  width: 100%;
+  height: 78px;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.search-button{
+  position: relative;
+  right: -40px;
+}
+
+.search-box input{
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 0px 56.5px;
+  background-color: transparent;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (max-width: 1080px) {
+  nav{
+    padding-right: 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container-search{
+    display: none;
   }
+
+   .container-navitem {
+      width: 60%;
+      height: 100%;
+      padding-top: 78px;
+      display: flex;
+      opacity: 0;
+      justify-content: start;
+      position: fixed;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1;
+      transition: all 0.4s;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      transform: translateX(500px);
+      gap: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .navitem{
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .wrapper-navitem{
+      display: flex;
+      padding: 20px 0px;
+      flex-direction: column;
+      width: 100%;
+      height: 200px;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(61, 59, 59, 0.671);
+    }
+
+    .slide {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+
+    .menu-toggle {
+      display: flex;
+    }
+
+    .menu-toggle:hover{
+      cursor: pointer;
+    }
+}
+@media screen and (max-width: 768px) {
+
+}
+  @media screen and (max-width: 490px) {
+    
 }
