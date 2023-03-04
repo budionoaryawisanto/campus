@@ -79,6 +79,14 @@ nav {
   text-decoration-thickness: 2px;
 }
 
+.underline{
+  text-decoration: underline;
+  text-decoration-color: rgb(67, 32, 163);
+  text-underline-position: auto;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+}
+
 .container-search{
   display: flex;
   width: 78px;
@@ -180,7 +188,7 @@ nav {
   margin-top: 5px;
 }
 
-.title-content{
+.header-content{
   margin: auto;
   margin-top: 30px;
   margin-bottom: 40px;
@@ -189,26 +197,86 @@ nav {
 }
 
 .container-content{
-  display: grid;
   width: 100%;
-  grid-template-columns: auto auto;
-  padding: 10px;
-  gap: 10px;
-  border: 1px solid black;
+  padding: 5px;
 }
 
 .content{
+  width: 50%;
+  height: 630px;
   display: flex;
+  gap: 13px;
   flex-direction: column;
-  border: 1px solid black;
-  justify-content: center;
+  float: left;
+  padding: 5px;
+}
+
+.content img{
+  cursor: pointer;
 }
 
 .detail-content{
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0px 2.5px;
+  padding: 0px 5px;
+  gap: 3px;
+}
+
+.title-content{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.text-content{
+  font-size: 18px;
+  line-height: 1.45;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4; 
+  -webkit-box-orient: vertical;
+  cursor: pointer;
+}
+
+.text-content:hover{
+  text-decoration: underline;
+}
+
+.footer{
+  clear: left;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3px;
+  margin-left: 30px;
+  padding-top: 30px;
+}
+
+.title-footer{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.location-footer{
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.location-footer:hover{
+  text-decoration: underline;
+}
+
+.links-footer{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 7px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -274,6 +342,10 @@ nav {
     .menu-toggle:hover{
       cursor: pointer;
     }
+
+  .content{
+  height: 540px;
+}
 }
 @media screen and (max-width: 768px) {
   .form-search{
@@ -301,6 +373,24 @@ nav {
 
   .action-hero{
     margin-top: 10px;
+  }
+
+  .content{
+    width: 100%;
+    height: auto;
+  }
+
+  .text-content{
+    font-size: 17px;
+    margin-bottom: 40px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    line-clamp: 6; 
+    -webkit-box-orient: vertical;
+  }
+
+  .footer{
+    margin-left: 15px;
   }
 }
   @media screen and (max-width: 490px) {
