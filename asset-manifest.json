@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/campus/static/css/main.b82c2a22.css",
-    "main.js": "/campus/static/js/main.c525d526.js",
+    "main.js": "/campus/static/js/main.906532fd.js",
     "static/media/video1.mp4": "/campus/static/media/video1.cd228abd86452af2ee58.mp4",
     "static/media/Profil NCIT.png": "/campus/static/media/Profil NCIT.0510a26a83614d0d1493.png",
     "static/media/hero_academic.png": "/campus/static/media/hero_academic.296adf239a0ab1239766.png",
@@ -16,10 +16,10 @@
     "static/media/Neo Culture Institute of Technology 1.png": "/campus/static/media/Neo Culture Institute of Technology 1.cf80867a2ab7b6bef7d3.png",
     "index.html": "/campus/index.html",
     "main.b82c2a22.css.map": "/campus/static/css/main.b82c2a22.css.map",
-    "main.c525d526.js.map": "/campus/static/js/main.c525d526.js.map"
+    "main.906532fd.js.map": "/campus/static/js/main.906532fd.js.map"
   },
   "entrypoints": [
     "static/css/main.b82c2a22.css",
-    "static/js/main.c525d526.js"
+    "static/js/main.906532fd.js"
   ]
 }
