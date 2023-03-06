@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/NCIT/static/css/main.a134f634.css",
+    "main.js": "/NCIT/static/js/main.af482765.js",
+    "static/media/video1.mp4": "/NCIT/static/media/video1.cd228abd86452af2ee58.mp4",
+    "static/media/Profil NCIT.png": "/NCIT/static/media/Profil NCIT.0510a26a83614d0d1493.png",
+    "static/media/hero_academic.png": "/NCIT/static/media/hero_academic.296adf239a0ab1239766.png",
+    "static/media/hero-service.png": "/NCIT/static/media/hero-service.1e058fba9abb0a4dc460.png",
+    "static/media/berita1.png": "/NCIT/static/media/berita1.f76c99d590348e7f3d68.png",
+    "static/media/berita3.png": "/NCIT/static/media/berita3.0b013683fb12e5b7ef80.png",
+    "static/media/berita4.png": "/NCIT/static/media/berita4.6a5730e79c6cb56cf9e0.png",
+    "static/media/berita5.png": "/NCIT/static/media/berita5.0c48c5c6ec5305ac360c.png",
+    "static/media/Nunito.ttf": "/NCIT/static/media/Nunito.4a3eef3e0a61b7eb3eda.ttf",
+    "static/media/berita2.png": "/NCIT/static/media/berita2.fbd4091d8ed302ddcdf8.png",
+    "static/media/placeholder.jpg": "/NCIT/static/media/placeholder.59eb03d608dc96ad2bfa.jpg",
+    "static/media/Neo Culture Institute of Technology 1.png": "/NCIT/static/media/Neo Culture Institute of Technology 1.cf80867a2ab7b6bef7d3.png",
+    "index.html": "/NCIT/index.html",
+    "main.a134f634.css.map": "/NCIT/static/css/main.a134f634.css.map",
+    "main.af482765.js.map": "/NCIT/static/js/main.af482765.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a134f634.css",
+    "static/js/main.af482765.js"
+  ]
+}
