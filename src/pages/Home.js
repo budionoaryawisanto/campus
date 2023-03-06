@@ -17,7 +17,9 @@ const Home = () => {
     <div className='body'>
       <Navbar home='underline' />
       <Sidebar />
-      <video src={video} controls muted  loop='true' autoPlay='autoplay'></video>
+      <div className="container-video">
+        <video src={video} controls muted  loop='true' autoPlay='autoplay'></video>
+      </div>
       <div className="header-content">BERITA NCIT</div>
       <div className="container-content">
         <Content tujuan='/news1' img={content1} title='Teknologi Baru untuk Menerapkan Suhu di VR (Virtual Reality) Dikembangkan' />
