@@ -2,7 +2,6 @@ import { useNavigate } from 'react-router-dom'
 import book from '../images/books.png'
 import search from '../images/search.png'
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 
 const Navbar = (props) => {
     const [toggleButton, setToggleButton] = useState(false);
