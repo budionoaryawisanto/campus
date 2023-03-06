@@ -36,7 +36,7 @@ nav {
   align-items: center;
   border-bottom: 1px solid rgba(187, 181, 181, 0.5);
   background-color: #292784;
-  z-index: 1;
+  z-index: 3;
   gap: 200px;
 }
 
@@ -53,6 +53,7 @@ nav {
   color: white;
   font-size: 18px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .navitem:hover{
@@ -318,7 +319,7 @@ video{
 
 .isi-berita{
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   width: 100%;
   padding: 10px 20px;
 }
@@ -483,12 +484,24 @@ video{
       margin-top: 200px;
     }
 
+    .sidebar-title p{
+      font-size: 24px;
+    }
+
     .content{
       width: 30%;
       margin: 10px;
     }
 }
 @media screen and (max-width: 768px) {
+
+  .body{
+    padding-left: 15%;
+  }
+
+  .container-sidebar{
+      width: 15%;
+    }
 
   .form-search{
     width: 80%;
@@ -505,7 +518,7 @@ video{
   }
 
   .sidebar-title p{
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .container-logo img{
@@ -585,6 +598,11 @@ video{
   @media screen and (max-width: 506px) {
     
     nav{
+      height: 82px;
+      padding-right: 20px;
+    }
+
+    .container-logo{
       height: 82px;
     }
 
