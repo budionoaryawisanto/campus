@@ -4,11 +4,11 @@ import search from '../images/search.png'
 import { useState } from 'react'
 
 const Navbar = (props) => {
+    const Navigate = useNavigate()
     const [toggleButton, setToggleButton] = useState(false);
      const toggleSwitch = () => {
          toggleButton ? setToggleButton(false) : setToggleButton(true);
-         const Navigate = useNavigate()
-  }
+        }
     return (
         <nav>
             <div className={`container-navitem ${toggleButton ? 'slide' : null}`}>
