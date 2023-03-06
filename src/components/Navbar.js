@@ -2,19 +2,21 @@ import { useNavigate } from 'react-router-dom'
 import book from '../images/books.png'
 import search from '../images/search.png'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = (props) => {
     const [toggleButton, setToggleButton] = useState(false);
      const toggleSwitch = () => {
-    toggleButton ? setToggleButton(false) : setToggleButton(true);
+         toggleButton ? setToggleButton(false) : setToggleButton(true);
+         const Navigate = useNavigate()
   }
     return (
         <nav>
             <div className={`container-navitem ${toggleButton ? 'slide' : null}`}>
-                <a href='/'className={`navitem ${props.home}`}>Beranda</a>
-                <a href='/about'className={`navitem ${props.about}`}>Tentang NCIT</a>
-                <a href='/academic' className={`navitem ${props.academic}`}>Akademik</a>
-                <a href='/service'className={`navitem ${props.service}`}>Layanan</a>
+                <button onClick={() => Navigate("/")} className={`navitem ${props.home}`}>Beranda</button>
+                <button onClick={() => Navigate("/about")} className={`navitem ${props.about}`}>Tentang NCIT</button>
+                <button onClick={() => Navigate("/academic")} className={`navitem ${props.academic}`}>Akademik</button>
+                <button onClick={() => Navigate("/service")} className={`navitem ${props.service}`}>Layanan</button>
             </div>
               <form action="/search" className='form-search'>
               <div className="search-box">
