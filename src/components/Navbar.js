@@ -12,10 +12,10 @@ const Navbar = (props) => {
     return (
         <nav>
             <div className={`container-navitem ${toggleButton ? 'slide' : null}`}>
-                <button onClick={() => Navigate("/")} className={`navitem ${props.home}`}>Beranda</button>
-                <button onClick={() => Navigate("/about")} className={`navitem ${props.about}`}>Tentang NCIT</button>
-                <button onClick={() => Navigate("/academic")} className={`navitem ${props.academic}`}>Akademik</button>
-                <button onClick={() => Navigate("/service")} className={`navitem ${props.service}`}>Layanan</button>
+                <div onClick={() => Navigate("/")} className={`navitem ${props.home}`}>Beranda</div>
+                <div onClick={() => Navigate("/about")} className={`navitem ${props.about}`}>Tentang NCIT</div>
+                <div onClick={() => Navigate("/academic")} className={`navitem ${props.academic}`}>Akademik</div>
+                <div onClick={() => Navigate("/service")} className={`navitem ${props.service}`}>Layanan</div>
             </div>
               <form action="/search" className='form-search'>
               <div className="search-box">
