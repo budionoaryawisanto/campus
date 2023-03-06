@@ -10,23 +10,18 @@ const Navbar = (props) => {
   }
     return (
         <nav>
-            <div className="container-logo">
-                <img src={book} alt="logo" />
-                <p>Neo Culture Institute of Technology</p>
-            </div>
             <div className={`container-navitem ${toggleButton ? 'slide' : null}`}>
-                <a href='/education'className={`navitem ${props.education}`}>Education</a>
-                <a href='' className={`navitem ${props.research}`}>Research</a>
-                <a href='' className="navitem">Innovation</a>
-                <a href='' className="navitem">Admissions + Aid</a>
-                <a href='' className="navitem">Campus Life</a>
-                <a href='' className="navitem">News</a>
-                <a href='' className="navitem">Alumni</a>
-                <a href='' className="navitem">About NCIT</a>
+                <a href='/'className={`navitem ${props.home}`}>Beranda</a>
+                <a href='/about'className={`navitem ${props.about}`}>Tentang NCIT</a>
+                <a href='/academic' className={`navitem ${props.academic}`}>Akademik</a>
+                <a href='/service'className={`navitem ${props.service}`}>Layanan</a>
             </div>
-            <div className="container-search">
-                <img src={search} alt="search" width='40px' height='40px' />
-            </div>
+              <form action="/search" className='form-search'>
+              <div className="search-box">
+                  <input type="search" name="search" placeholder='What are you looking for ?' id="search" />
+                  <img src={search} alt="search" width='30px' height="30px" className='search-button'/>
+              </div>
+      </form>
              <div className="menu-toggle" onClick={toggleSwitch}>
           <span></span>
           <span></span>
