@@ -13,7 +13,6 @@ import Service from './pages/Service';
 
 function App() {
   return (
-  <BrowserRouter basename={window.location.pathname || ''}>
     <Routes>
       <Route exact path="/" element={<Home/>} />
       <Route exact path="/education" element={<Education/>} />
@@ -26,7 +25,6 @@ function App() {
         <Route exact path="/news4" element={<News context={<Berita4/>} />} />
         <Route exact path="/news5" element={<News context={<Berita5/>} />} />
     </Routes>
-  </BrowserRouter>
   );
 }
 
